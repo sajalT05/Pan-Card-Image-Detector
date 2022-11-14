@@ -8,11 +8,11 @@ class Config(object):
     
     basedir    = os.path.abspath(os.path.dirname(__file__))
 
-    SECRET_KEY = 'pianalytix'
+    SECRET_KEY = 'pan_card_detector'
 
-    DB_NAME = "production-db"
+    DB_NAME = "pan_card_detector_db"
     DB_USERNAME = "root"
-    DB_PASSWORD = "pianalytix"
+    DB_PASSWORD = "pan_card_detector_pwd"
 
     UPLOADS = "/home/username/app/app/static/uploads"
 
@@ -26,9 +26,9 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     DEBUG = True
 
-    DB_NAME = "production-db"
+    DB_NAME = "pan_card_detector_production-db"
     DB_USERNAME = "root"
-    DB_PASSWORD = "pianalytix"
+    DB_PASSWORD = "pan_card_detector_pwd"
 
     UPLOADS = "/home/username/app/app/static/uploads"
     SESSION_COOKIE_SECURE = False
@@ -37,9 +37,9 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     DEBUG = True
 
-    DB_NAME = "production-db"
+    DB_NAME = "pan_card_detector_production-db"
     DB_USERNAME = "root"
-    DB_PASSWORD = "pianalytix"
+    DB_PASSWORD = "pan_card_detector_pwd"
 
     UPLOADS = "/home/username/app/app/static/uploads"
     SESSION_COOKIE_SECURE = False
